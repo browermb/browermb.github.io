@@ -41,7 +41,7 @@
 
                 <div class="col-sm-10"> 
                     <h4> Lots of upperclassmen will shit on you because you dont know how to navigate your tools. <br> But I understand this shit is hard to learn. <br> They dont teach you it in class and then expect you to pick it up as you progress through the major </h4>
-                    <h5>  <tag id = "SSHKeyGen "> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </tag></h5>
+                    <h5 id = "SSHKeyGen"> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </h5>
                     <p>
                         First we must generate a public/private key pair. If you want to know more about this you will need to look more into RSA encryption. For this the command is: ssh-keygen. But without the period, it might seem silly but I have been the college student mistyping commands because I thought the period was part of it. Now this command is going to ask you where to store it so make sure you know where your home directory is and  store it in /home/.ssh/stu.cs.jmu.edu and gosh forbid please dont give it a password.
                         <figure>
@@ -68,7 +68,7 @@
                         Then paste the contents of the contents of your public key e.g. the stuff we just generated e.g. paste the contents of /home/.ssh/stu.cs.jmu.edu.pub <br>
                         If you dont quite know where to get this you can type : cat /home/.ssh/stu.cs.jmu.edu.pub and then copy and paste
                     </p>
-                    <h5><tag id = "Github ">Lots of people dont know how to use Github. Please learn. You basically need 3 commands and it could save you so much headache</tag></h5>
+                    <h5 id = "Github">Lots of people dont know how to use Github. Please learn. You basically need 3 commands and it could save you so much headache</h5>
                     <p>
                         So lets say that you have created a git repository or maybe your teacher created on for you for some assignment. <br>
                         The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.<br>
