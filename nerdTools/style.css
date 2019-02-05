@@ -1,0 +1,21 @@
+.jumbotron.call-to-action {
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.table-of-contents {
+    position: fixed;
+    right: auto;
+    top: auto;
+}
+
+.panel-image {
+    background-image: url(isat.png);
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    height: 50vh;
+    max-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

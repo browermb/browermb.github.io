@@ -8,11 +8,12 @@
     <title>Nerd Tools Help</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+        <link rel="stylesheet" href= "style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-    <nav id="toc" data-toggle="toc"></nav>
+    
     <a class="navbar-brand" href="#">CS Tools</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,19 +29,23 @@
 
                 </div>
     </nav>
-    <body data-spy="scroll" data-target="#toc"></body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2">
-                    <ul>
-                        <li class = "toclevel-1"> <a href="#SSHKeyGen"> SSH Key Gen </a> </li>
-                        <li class = "toclevel-2"> <a href= "#Github"> Github Tools </a></li>  
-                    </ul>
-                    
+                    <div class = "table-of-contents">
+                        <ul>
+                            <li class = "toclevel-1"> <a href="#SSHKeyGen"> SSH Key Gen </a> </li>
+                            <li class = "toclevel-2"> <a href= "#Github"> Github Tools </a></li>  
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-sm-10"> 
-                    <h4> Lots of upperclassmen will shit on you because you dont know how to navigate your tools. <br> But I understand this shit is hard to learn. <br> They dont teach you it in class and then expect you to pick it up as you progress through the major </h4>
+                    <div class="jumbotron call-to-action">
+                        <h1 class="display-4">Learn your tools!</h1>
+                        <p class="lead">Lots of upperclassmen will give you a hard time because you dont know how to navigate your tools. <br> But I understand this stuff is hard to learn. <br> They dont teach you it in class and then expect you to pick it up as you progress through the major.</p>
+                        <hr class="my-4">
+                     </div>
                     <h5 id = "SSHKeyGen"> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </h5>
                     <p>
                         First we must generate a public/private key pair. If you want to know more about this you will need to look more into RSA encryption. For this the command is: ssh-keygen. But without the period, it might seem silly but I have been the college student mistyping commands because I thought the period was part of it. Now this command is going to ask you where to store it so make sure you know where your home directory is and  store it in /home/.ssh/stu.cs.jmu.edu and gosh forbid please dont give it a password.
@@ -68,7 +73,10 @@
                         Then paste the contents of the contents of your public key e.g. the stuff we just generated e.g. paste the contents of /home/.ssh/stu.cs.jmu.edu.pub <br>
                         If you dont quite know where to get this you can type : cat /home/.ssh/stu.cs.jmu.edu.pub and then copy and paste
                     </p>
-                    <h5 id = "Github">Lots of people dont know how to use Github. Please learn. You basically need 3 commands and it could save you so much headache</h5>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                            <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "Github">Lots of people dont know how to use Github. Please learn. You basically need 4 commands and it could save you so much headache</h5>
                     <p>
                         So lets say that you have created a git repository or maybe your teacher created on for you for some assignment. <br>
                         The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.<br>
@@ -76,15 +84,18 @@
                         If you dont have a repository created yet but instead need to initialize on you would type "git init". <br>
                         Now what is the process of adding code to the repository
                         <ul>
+                            <li> "git status" tells you the current status of your local repo</li>
                             <li> "git add *" this means adds all my files you can add just specific files by saying "git add hi.py" This specifies which files are going to be added to the repository</li>
-                            <li> "git commit -m "a message descriping your changes"" Now this command will commit your changes to your local repository but doesnt make changes to the .... repository</li>
-                            <li> "git push" this will push your changes to the ... repository</li>
+                            <li> "git commit -m "a message descriping your changes"" Now this command will commit your changes to your local repository but doesnt make changes to the remote repository</li>
+                            <li> "git push" this will push your changes to the remote repository</li>
                         </ul>
                         <br>
                         Now these are the commands you will need for your own repository. If this is a repository with multiple team members you will need one more.
                         Lets say your teammate made changes to your group's code and now you need the most up to date code. you would say "git pull". Everytime you are about to push code to a shared repository you need to call this command. This could lead to merge conflicts meaning there were changes that were made while you were working on the same code. You would need to fix this conflicts and then push your code. 
                         <br>
-                        There are a plenty of commands that are out there but these are the mains ones that you would be using. The only other one I have touched is "git checkout" and this is to "checkout" a branch but I will leave it up to you to learn what that means. Happy coding!
+                        There are a plenty of commands that are out there but these are the mains ones that you would be using. The only other one I have touched is "git checkout" and this is to "checkout" a branch but I will leave it up to you to learn what that means. 
+                        <br>
+                        One of I have just recently learned about is "git diff". You can use this in multiple different ways. One way is you have made some changes git diff will tell you where these changes are and whether they are addition or subtractions. Happy coding!
                     </p>
                 </div>
             </div>
