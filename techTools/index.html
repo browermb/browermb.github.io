@@ -45,18 +45,18 @@
                 <div class="col-sm-10"> 
                     <div class="jumbotron call-to-action">
                         <h1 class="display-4">Learn your tools!</h1>
-                        <p class="lead">Lots of upperclassmen will give you a hard time because you dont know how to navigate your tools. <br> But I understand this stuff is hard to learn. <br> They dont teach you it in class and then expect you to pick it up as you progress through the major.</p>
+                        <p class="lead">Lots of upperclassmen will give you a hard time because you dont know how to navigate your tools. <br> So here I have tried to compile some tools I have found helpful.</p>
                         <hr class="my-4">
                      </div>
                     <h5 id = "SSHKeyGen"> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </h5>
                     <p>
-                        First we must generate a public/private key pair. If you want to know more about this you will need to look more into RSA encryption. For this the command is: ssh-keygen. But without the period, it might seem silly but I have been the college student mistyping commands because I thought the period was part of it. Now this command is going to ask you where to store it so make sure you know where your home directory is and  store it in /home/.ssh/stu.cs.jmu.edu and gosh forbid please dont give it a password.
+                        First we must generate a public/private key pair. If you want to know more about this you will need to look more into RSA encryption. For this the command is: ssh-keygen. But without the period, maybe it seems silly but I have been the college student mistyping commands because I thought the period was part of it. Now this command is going to ask you where to store it so make sure you know where your home directory is and  store it in /home/.ssh/stu.cs.jmu.edu and no need to give it a password.
                         <figure>
                                 <img class = "fit-picture"
                                 src = "keyGen.png"
                                 width = "500"
                                 />
-                                <figcaption>Here is what it looked like when I did it but with </figcaption>
+                                <figcaption>Here is what it looked like when I did it but with my info</figcaption>
                         </figure>
                     </p>
                     <p> Before we add the key into our authorized key file let's ssh into stu and add some information to our ssh config. Place the following information but with your e-id
@@ -68,7 +68,7 @@
                             </figure>
                     </p>
                     <p>
-                        Now let's ssh into stu to edit our authorized keys! I know this is so much fun and you want it to continue to forever, unfortunately, though we only have a couple more steps. 
+                        Now let's ssh into stu to edit our authorized keys! 
                     </p>
                     <p>
                         In order to edit this run the following command: vim ~/.ssh/authorized_keys <br>
@@ -78,7 +78,7 @@
                     <div class = "panel-image" style= "background-image: url(isat.png)">
                             <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "Github">Lots of people dont know how to use Github. Please learn. You basically need 4 commands and it could save you so much headache</h5>
+                    <h5 id = "Github">Lots of people dont know how to use Github. You basically need 4 commands and it could save you so much headache. I have peronally overwritten numerous PAs and version control has saved my grades</h5>
                     <p>
                         So lets say that you have created a git repository or maybe your teacher created on for you for some assignment. <br>
                         The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.<br>
