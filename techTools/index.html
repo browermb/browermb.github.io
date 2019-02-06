@@ -37,6 +37,7 @@
                             <div class = "card-body">
                                 <h6 class="tocLink"><a href="#SSHKeyGen"> SSH Key Gen </a></h6>
                                 <h6 class = "tocLink"><a href= "#Github"> Github Tools </a></h6>
+                                <h6 class = "tocLink"><a href="#SCP">SCP</a></h6>
                             </div>
                         </div>
                     </div>
@@ -45,7 +46,7 @@
                 <div class="col-sm-10"> 
                     <div class="jumbotron call-to-action">
                         <h1 class="display-4">Learn your tools!</h1>
-                        <p class="lead">Lots of upperclassmen will give you a hard time because you dont know how to navigate your tools. <br> So here I have tried to compile some tools I have found helpful.</p>
+                        <p class="lead">Lots of upperclassmen will tease you if dont know how to navigate your tools. This is not to say they wont help you learn them though! <br> So here I have tried to compile some tools I have found helpful.</p>
                         <hr class="my-4">
                      </div>
                     <h5 id = "SSHKeyGen"> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </h5>
@@ -81,17 +82,21 @@
                     <h5 id = "Github">Lots of people dont know how to use Github. You basically need 4 commands and it could save you so much headache. I have peronally overwritten numerous PAs and version control has saved my grades</h5>
                     <p>
                         So lets say that you have created a git repository or maybe your teacher created on for you for some assignment. <br>
-                        The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.<br>
-                        Now back in the command line type "git clone link" where link is the appropriate place. Note that this will create the repository wherever you are so make sure you are located in the directory you want. <br>
-                        If you dont have a repository created yet but instead need to initialize on you would type "git init". <br>
-                        Now what is the process of adding code to the repository
+                        The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.
+                        Now back in the command line type "git clone link" where link is the appropriate place. Note that this will create the repository wherever you are so make sure you are located in the directory you want. 
+                    </p>
+                    <p> If you dont have a repository created yet but instead need to initialize on         you would type "git init". <br> <br>
+                    
+                        Now what is the process of adding code to the repository: <br>
                         <ul>
                             <li> "git status" tells you the current status of your local repo</li>
                             <li> "git add *" this means adds all my files you can add just specific files by saying "git add hi.py" This specifies which files are going to be added to the repository</li>
                             <li> "git commit -m "a message descriping your changes"" Now this command will commit your changes to your local repository but doesnt make changes to the remote repository</li>
                             <li> "git push" this will push your changes to the remote repository</li>
                         </ul>
-                        <br>
+                    </p>
+                        
+                    <p>
                         Now these are the commands you will need for your own repository. If this is a repository with multiple team members you will need one more.
                         Lets say your teammate made changes to your group's code and now you need the most up to date code. you would say "git pull". Everytime you are about to push code to a shared repository you need to call this command. This could lead to merge conflicts meaning there were changes that were made while you were working on the same code. You would need to fix this conflicts and then push your code. 
                         <br>
@@ -99,6 +104,11 @@
                         <br>
                         One of I have just recently learned about is "git diff". You can use this in multiple different ways. One way is you have made some changes git diff will tell you where these changes are and whether they are addition or subtractions. Happy coding!
                     </p>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                        <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "SCP">Next I am going to talk about a way to transfer files from stu to your local machine without using something like WinSCP</h5>
+                    <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with</p>
                 </div>
             </div>
         </div>
