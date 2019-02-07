@@ -38,6 +38,9 @@
                                 <h6 class="tocLink"><a href="#SSHKeyGen"> SSH Key Gen </a></h6>
                                 <h6 class = "tocLink"><a href= "#Github"> Github Tools </a></h6>
                                 <h6 class = "tocLink"><a href="#SCP">SCP</a></h6>
+                                <h6 class = "tocLink"><a href="#keyShort">Keyboard Shortcuts</a></h6>
+                                <h6 class = "tocLink"><a href = "#VIM">VIM</a></h6>
+                                <h6 class = "tocLink"><a href = "#tmux" > tmux </a></h6>
                             </div>
                         </div>
                     </div>
@@ -108,7 +111,52 @@
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
                     <h5 id = "SCP">Next I am going to talk about a way to transfer files from stu to your local machine without using something like WinSCP</h5>
-                    <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with</p>
+                    <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with
+                    </p>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                        <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "keyShort">Here I am going to list a few keyboard shortcuts I have found useful. I only know a couple, but if it helps one person thats all thats</h5>
+                    <ul>
+                        <li> cmd v or cntrl v will paste whatever is currently on your clipboard</li>
+                        <li> cmd c or cntl c will copy the current highlighted text</li>
+                        <li> cmd x ot cntrl x will cut the current hightlight text</li>
+                        <li> you can hold shift and use your arrow keys to hightlight some text</li>
+                        <li> cmd tab or alt tab will change your current window</li>
+                    </ul>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                        <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "VIM"> So VIM is a basically a terminal text editor. Once you get good at it you can get really fast and only knowing a couple things can get you there</h5>
+                    <p>
+                        I do not know too many VIM commands but I do love knowing it. For example, when you ssh into stu you cant use text editors that are downloaded on your local machine such as gedit. But.... VIM is there and so that is really convenient because then I can edit files in current time. You could scp the file but then if you want changes on stu you'd have to find some way to get those changes onto stu. Below are the commands I know and in front of Dr. Lam's office he has a sheet with plenty more.
+                        <ul> 
+                            <li> In order to edit the file you need to hit "i" to be in insert mode</li>
+                            <li>To get out of a mode you can hit "esc"</li>
+                            <li>Other modes include visual mode, to enter hit "v", this allows you to select text</li>
+                            <li>If text is selected you can hit "y" to copy the highlighted information. y stands for yank</li>
+                            <li>dd deletes your current line, you can hit the up arrow to delete the line(s) above it</li>
+                            <li> In order to save your changes you must write to the file so you would hit ":w"</li>
+                            <li> To exit vim you would hit ":q" you can write and quit by saying ":wq"</li> 
+                            <li> Undo is pretty intuitive with ":u"</li>
+                            <li> "$" will put you at the end of your current line</li>
+                            <li> "0" will bring you to the beginning of your current line</li>
+                            <li> if you hit "4gg" that will take you to line 4 of your file</li>
+                        </ul>
+                        <br>
+                        By default, tabs are tabs not spaces and you dont see line numbers if you arent on your own machine or account you can say ":set tabstop=4" and that will say a tab is equal to four spaces and ":set nu" will include number lines. Now these will only be temporary configurations so you can add them to your .vimrc in order to permanently make these changes.
+                    </p>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                        <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "tmux">So tmux is a terminal-multiplexer. This means that it allows multiple terminal sessions to be accessed simultaneously in a single window. Now I know, I kid you not, 4 commands and I still utilize this</h5>
+                    <p> To open tmux you just type "tmux" in a terminal</p>
+                    <ul>
+                        <li>"cntrl b %" will split your terminal in half vertically</li>
+                        <li>"cntrl b "" will split your terminal in half horizontally</li>
+                        <li>Hitting cntrl b and then using your arrow keys will move which "terminal" you are located in</li>
+                        <li>exit will close the terminal you are in. Note: to close 2 terminals you will need to type exit 3 times. Twice for the windows and then once for tmux itself</li>
+                    </ul>
                 </div>
             </div>
         </div>
