@@ -9,3 +9,7 @@ h4 {
 nav {
     color: rgb(165, 168, 170)
 }
+
+.col-sm-3 {
+    padding-top: 10px;
+}
