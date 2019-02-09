@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
     
     <a class="navbar-brand" href="#">CS Tools</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -31,7 +31,7 @@
     </nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-md-2 d-sm-none d-md-block">
                     <div class = "table-of-contents">
                         <div class="card-toc"> 
                             <div class = "card-body">
@@ -41,12 +41,13 @@
                                 <h6 class = "tocLink"><a href="#keyShort">Keyboard Shortcuts</a></h6>
                                 <h6 class = "tocLink"><a href = "#VIM">VIM</a></h6>
                                 <h6 class = "tocLink"><a href = "#tmux" > tmux </a></h6>
+                                <h6 class = "tocLink"><a href = "#termCmnd">Terminal Commands</a></h6>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-10"> 
+                <div class="col-md-10"> 
                     <div class="jumbotron call-to-action">
                         <h1 class="display-4">Learn your tools!</h1>
                         <p class="lead">Lots of upperclassmen will tease you if dont know how to navigate your tools. This is not to say they wont help you learn them though! <br> So here I have tried to compile some tools I have found helpful.</p>
@@ -111,7 +112,7 @@
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
                     <h5 id = "SCP">Next I am going to talk about a way to transfer files from stu to your local machine without using something like WinSCP</h5>
-                    <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with
+                    <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu:path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. It is very important that you dont add a space before your path-to-file. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with
                     </p>
                     <div class = "panel-image" style= "background-image: url(isat.png)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
@@ -121,8 +122,13 @@
                         <li> cmd v or cntrl v will paste whatever is currently on your clipboard</li>
                         <li> cmd c or cntl c will copy the current highlighted text</li>
                         <li> cmd x ot cntrl x will cut the current hightlight text</li>
+                        <li> cmd a or cntrl a will select all</li>
                         <li> you can hold shift and use your arrow keys to hightlight some text</li>
                         <li> cmd tab or alt tab will change your current window</li>
+                        <li> cntrl t will change your current tab</li>
+                        <li> cmd t or cntrl t will open a new tab/window in your browser</li>
+                        <li> cmd w or cntrl w will close your current tab or window </li>
+                        <li> cmd shift t or cntrl shift t will open your last closed tab or window in the browser</li>
                     </ul>
                     <div class = "panel-image" style= "background-image: url(isat.png)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
@@ -132,6 +138,7 @@
                         I do not know too many VIM commands but I do love knowing it. For example, when you ssh into stu you cant use text editors that are downloaded on your local machine such as gedit. But.... VIM is there and so that is really convenient because then I can edit files in current time. You could scp the file but then if you want changes on stu you'd have to find some way to get those changes onto stu. Below are the commands I know and in front of Dr. Lam's office he has a sheet with plenty more.
                         <ul> 
                             <li> In order to edit the file you need to hit "i" to be in insert mode</li>
+                            <li> If you hit "o" then it will put you in insert mode on a new line</li>
                             <li>To get out of a mode you can hit "esc"</li>
                             <li>Other modes include visual mode, to enter hit "v", this allows you to select text</li>
                             <li>If text is selected you can hit "y" to copy the highlighted information. y stands for yank</li>
@@ -157,6 +164,21 @@
                         <li>Hitting cntrl b and then using your arrow keys will move which "terminal" you are located in</li>
                         <li>exit will close the terminal you are in. Note: to close 2 terminals you will need to type exit 3 times. Twice for the windows and then once for tmux itself</li>
                     </ul>
+                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                            <div class="panel-image-prop" style="padding-top: 60%"></div>
+                    </div>
+                    <h5 id = "termCmnd">For a while you work in a lot of IDEs but as you progress it becomes easier and easier to navigate through the terminal. So here a couple commands that I believe are useful to know</h5>
+                    <ul>
+                        <li>"cd directory" stands for change directory and will move you to the directory you specify e.g. "cd Desktop/Cs354" means go to my desktop and then my CS354 folder </li>
+                        <li>"ls" stands for list and will list the items in your current directory</li>
+                        <li>"ll" will lists all items in your current directory including hidden files</li>
+                        <li>"pwd" stands for the path of your working directory and will give you the entire path of where you are currently</li>
+                        <li>"mv this-file to-here" stands for move what I specify to my specified spot e.g. "mv Desktop/Cs354/hw1.py ." means move my hw1.py file in the Cs354 folder located on my desktop to where I am currently working. You can also use move to rename a file by being located in the same directory as your file and giving it a new name.</li>
+                        <li>"cp this-file here" means copy the file located at this path to where you specify it</li>
+                        <li> "rm this-file" means remove this file</li>
+                    </ul>
+
+                    <p> With a lot of these commands you can add a -r which means recursively for an entire folder instead of just a singular file. Also my own personal warning be careful with mv because you can overwrite your files!!</p>
                 </div>
             </div>
         </div>
