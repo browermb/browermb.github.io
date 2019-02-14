@@ -31,7 +31,7 @@
     </nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 d-sm-none d-md-block">
+                <div class="col-md-2 d-none d-md-block">
                     <div class = "table-of-contents">
                         <div class="card-toc"> 
                             <div class = "card-body">
@@ -53,7 +53,8 @@
                         <p class="lead">Lots of upperclassmen will tease you if dont know how to navigate your tools. This is not to say they wont help you learn them though! <br> So here I have tried to compile some tools I have found helpful.</p>
                         <hr class="my-4">
                      </div>
-                    <h5 id = "SSHKeyGen"> Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself </h5>
+                    <h5 id = "SSHKeyGen"> SSH Key Generation</h5>
+                    <h6>Below I have included the steps to generate ssh keys so you dont need to log in every time as well as images with me doing it myself</h6>
                     <p>
                         First we must generate a public/private key pair. If you want to know more about this you will need to look more into RSA encryption. For this the command is: ssh-keygen. But without the period, maybe it seems silly but I have been the college student mistyping commands because I thought the period was part of it. Now this command is going to ask you where to store it so make sure you know where your home directory is and  store it in /home/.ssh/stu.cs.jmu.edu and no need to give it a password.
                         <figure>
@@ -80,10 +81,11 @@
                         Then paste the contents of the contents of your public key e.g. the stuff we just generated e.g. paste the contents of /home/.ssh/stu.cs.jmu.edu.pub <br>
                         If you dont quite know where to get this you can type : cat /home/.ssh/stu.cs.jmu.edu.pub and then copy and paste
                     </p>
-                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                    <div class = "panel-image" style= "background-image: url(popBackground.jpg)">
                             <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "Github">Lots of people dont know how to use Github. You basically need 4 commands and it could save you so much headache. I have peronally overwritten numerous PAs and version control has saved my grades</h5>
+                    <h5 id = "Github">Github</h5>
+                    <h6>Lots of people dont know how to use Github. You basically need 4 commands and it could save you so much headache. I have peronally overwritten numerous PAs and version control has saved my grades</h6>
                     <p>
                         So lets say that you have created a git repository or maybe your teacher created on for you for some assignment. <br>
                         The first step is to clone the repository so you can add your code to it from your machine. To do this you need to go the the github page and you should see a clone or download button in the top right. Copy the link to it.
@@ -93,10 +95,10 @@
                     
                         Now what is the process of adding code to the repository: <br>
                         <ul>
-                            <li> "git status" tells you the current status of your local repo</li>
-                            <li> "git add *" this means adds all my files you can add just specific files by saying "git add hi.py" This specifies which files are going to be added to the repository</li>
-                            <li> "git commit -m "a message descriping your changes"" Now this command will commit your changes to your local repository but doesnt make changes to the remote repository</li>
-                            <li> "git push" this will push your changes to the remote repository</li>
+                            <li> <code>git status</code> tells you the current status of your local repo</li>
+                            <li> <code>git add *</code> this means adds all my files you can add just specific files by saying "git add hi.py" This specifies which files are going to be added to the repository</li>
+                            <li> <code>git commit -m "a message descriping your changes"</code> Now this command will commit your changes to your local repository but doesnt make changes to the remote repository</li>
+                            <li> <code>git push</code> this will push your changes to the remote repository</li>
                         </ul>
                     </p>
                         
@@ -108,32 +110,35 @@
                         <br>
                         One of I have just recently learned about is "git diff". You can use this in multiple different ways. One way is you have made some changes git diff will tell you where these changes are and whether they are addition or subtractions. Happy coding!
                     </p>
-                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                    <div class = "panel-image" style= "background-image: url(jmuLogo.png)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "SCP">Next I am going to talk about a way to transfer files from stu to your local machine without using something like WinSCP</h5>
+                    <h5 id = "SCP">SCP</h5>
+                    <h6>Next I am going to talk about a way to transfer files from stu to your local machine without using something like WinSCP</h6>
                     <p> Unfortunately, I do not know much about this command but look forward to the opportunity to learn more about it. <br> For now I will provide what I do know. So there are two different file transfer commands scp and ftp. You <strong>always</strong> want to use scp because it is secure. So to transfer a file from stu to your machine you would type in the terminal "scp e-id@stu.cs.jmu.edu:path-to-file place-you-want-it" The last part of the path to file will be the /fileName.extension. It is very important that you dont add a space before your path-to-file. Also you can say "." to mean place it where I am currently located. If you want an entire folder instead of a file it is the same command with a -r meaning recursive (I believe) so you would say "scp -r e-id@stu.cs.jmu.edu: path-to-file place-you-want-it" Now stu is just a host. So you can scp from other hosts but this is all the information I can provide you with
                     </p>
                     <div class = "panel-image" style= "background-image: url(isat.png)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "keyShort">Here I am going to list a few keyboard shortcuts I have found useful. I only know a couple, but if it helps one person thats all thats</h5>
+                    <h5 id = "keyShort"> Keyboard Shortcuts</h5>
+                    <h6>Here I am going to list a few keyboard shortcuts I have found useful. I only know a couple, but if it helps one person thats all that matters.</h6>
                     <ul>
-                        <li> cmd v or cntrl v will paste whatever is currently on your clipboard</li>
-                        <li> cmd c or cntl c will copy the current highlighted text</li>
-                        <li> cmd x ot cntrl x will cut the current hightlight text</li>
-                        <li> cmd a or cntrl a will select all</li>
+                        <li> <kbd>cmd v</kbd> or <kbd> ctrl v</kbd> v will paste whatever is currently on your clipboard</li>
+                        <li> <kbd>cmd c</kbd> or <kbd>ctrl c</kbd> will copy the current highlighted text</li>
+                        <li> <kbd>cmd x</kbd> or <kbd>ctrl x</kbd> will cut the current hightlight text</li>
+                        <li> <kbd>cmd a</kbd> or <kbd>ctrl a</kbd> will select all</li>
                         <li> you can hold shift and use your arrow keys to hightlight some text</li>
-                        <li> cmd tab or alt tab will change your current window</li>
-                        <li> cntrl t will change your current tab</li>
-                        <li> cmd t or cntrl t will open a new tab/window in your browser</li>
-                        <li> cmd w or cntrl w will close your current tab or window </li>
-                        <li> cmd shift t or cntrl shift t will open your last closed tab or window in the browser</li>
+                        <li> <kbd>cmd tab</kbd> or <kbd>alt tab</kbd> will change your current window</li>
+                        <li> <kbd>ctrl t</kbd> will change your current tab</li>
+                        <li> <kbd>cmd t</kbd> or <kbd>ctrl t</kbd> will open a new tab/window in your browser</li>
+                        <li> <kbd>cmd w</kbd> or <kbd>ctrl w</kbd> will close your current tab or window </li>
+                        <li> <kbd>cmd shift t</kbd> or <kbd>ctrl shift t</kbd> will open your last closed tab or window in the browser</li>
                     </ul>
-                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                    <div class = "panel-image" style= "background-image: url(popBackground.jpg)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "VIM"> So VIM is a basically a terminal text editor. Once you get good at it you can get really fast and only knowing a couple things can get you there</h5>
+                    <h5 id = "VIM"> VIM</h5>
+                    <h6>So VIM is a basically a terminal text editor. Once you get good at it you can get really fast and only knowing a couple things can get you there</h6>
                     <p>
                         I do not know too many VIM commands but I do love knowing it. For example, when you ssh into stu you cant use text editors that are downloaded on your local machine such as gedit. But.... VIM is there and so that is really convenient because then I can edit files in current time. You could scp the file but then if you want changes on stu you'd have to find some way to get those changes onto stu. Below are the commands I know and in front of Dr. Lam's office he has a sheet with plenty more.
                         <ul> 
@@ -153,10 +158,11 @@
                         <br>
                         By default, tabs are tabs not spaces and you dont see line numbers if you arent on your own machine or account you can say ":set tabstop=4" and that will say a tab is equal to four spaces and ":set nu" will include number lines. Now these will only be temporary configurations so you can add them to your .vimrc in order to permanently make these changes.
                     </p>
-                    <div class = "panel-image" style= "background-image: url(isat.png)">
+                    <div class = "panel-image" style= "background-image: url(jmuLogo.png)">
                         <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "tmux">So tmux is a terminal-multiplexer. This means that it allows multiple terminal sessions to be accessed simultaneously in a single window. Now I know, I kid you not, 4 commands and I still utilize this</h5>
+                    <h5 id = "tmux">tmux</h5>
+                    <h6>So tmux is a terminal-multiplexer. This means that it allows multiple terminal sessions to be accessed simultaneously in a single window. Now I know, I kid you not, 4 commands and I still utilize this</h6>
                     <p> To open tmux you just type "tmux" in a terminal</p>
                     <ul>
                         <li>"cntrl b %" will split your terminal in half vertically</li>
@@ -167,7 +173,8 @@
                     <div class = "panel-image" style= "background-image: url(isat.png)">
                             <div class="panel-image-prop" style="padding-top: 60%"></div>
                     </div>
-                    <h5 id = "termCmnd">For a while you work in a lot of IDEs but as you progress it becomes easier and easier to navigate through the terminal. So here a couple commands that I believe are useful to know</h5>
+                    <h5 id = "termCmnd">Terminal Commands</h5>
+                    <h6>For a while you work in a lot of IDEs but as you progress it becomes easier and easier to navigate through the terminal. So here a couple commands that I believe are useful to know</h6>
                     <ul>
                         <li>"cd directory" stands for change directory and will move you to the directory you specify e.g. "cd Desktop/Cs354" means go to my desktop and then my CS354 folder </li>
                         <li>"ls" stands for list and will list the items in your current directory</li>
