@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
     
-    <a class="navbar-brand" href="#">CS Tools</a>
+    <a class="navbar-brand" href="#">Welcome</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,10 +23,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="https://jmu-cs-c4k.github.io/collegeforkids-python/">College for Kids <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Other Links
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="https://browermb.github.io/collegeforkids-python/">College For Kids</a>
+                          
+                        </div>
+                      </li>
                 </div>
     </nav>
         <div class="container-fluid">
@@ -165,9 +172,9 @@
                     <h6>So tmux is a terminal-multiplexer. This means that it allows multiple terminal sessions to be accessed simultaneously in a single window. Now I know, I kid you not, 4 commands and I still utilize this</h6>
                     <p> To open tmux you just type "tmux" in a terminal</p>
                     <ul>
-                        <li>"cntrl b %" will split your terminal in half vertically</li>
-                        <li>"cntrl b "" will split your terminal in half horizontally</li>
-                        <li>Hitting cntrl b and then using your arrow keys will move which "terminal" you are located in</li>
+                        <li><kbd>ctrl b %</kbd> will split your terminal in half vertically</li>
+                        <li><kbd>ctrl b "</kbd> will split your terminal in half horizontally</li>
+                        <li>Hitting <kbd>ctrl b</kbd> and then using your arrow keys will move which "terminal" you are located in</li>
                         <li>exit will close the terminal you are in. Note: to close 2 terminals you will need to type exit 3 times. Twice for the windows and then once for tmux itself</li>
                     </ul>
                     <div class = "panel-image" style= "background-image: url(isat.png)">
@@ -176,13 +183,13 @@
                     <h5 id = "termCmnd">Terminal Commands</h5>
                     <h6>For a while you work in a lot of IDEs but as you progress it becomes easier and easier to navigate through the terminal. So here a couple commands that I believe are useful to know</h6>
                     <ul>
-                        <li>"cd directory" stands for change directory and will move you to the directory you specify e.g. "cd Desktop/Cs354" means go to my desktop and then my CS354 folder </li>
-                        <li>"ls" stands for list and will list the items in your current directory</li>
-                        <li>"ll" will lists all items in your current directory including hidden files</li>
-                        <li>"pwd" stands for the path of your working directory and will give you the entire path of where you are currently</li>
-                        <li>"mv this-file to-here" stands for move what I specify to my specified spot e.g. "mv Desktop/Cs354/hw1.py ." means move my hw1.py file in the Cs354 folder located on my desktop to where I am currently working. You can also use move to rename a file by being located in the same directory as your file and giving it a new name.</li>
-                        <li>"cp this-file here" means copy the file located at this path to where you specify it</li>
-                        <li> "rm this-file" means remove this file</li>
+                        <li><code>cd directory</code> stands for change directory and will move you to the directory you specify e.g. <code>cd Desktop/Cs354</code> means go to my desktop and then my CS354 folder </li>
+                        <li><code>ls</code> stands for list and will list the items in your current directory</li>
+                        <li><code>ll</code> will lists all items in your current directory including hidden files</li>
+                        <li><code>pwd</code> stands for the path of your working directory and will give you the entire path of where you are currently</li>
+                        <li><code>mv this-file to-here</code> stands for move what I specify to my specified spot e.g. <code>mv Desktop/Cs354/hw1.py . </code>means move my hw1.py file in the Cs354 folder located on my desktop to where I am currently working. You can also use move to rename a file by being located in the same directory as your file and giving it a new name.</li>
+                        <li><code>cp this-file here</code> means copy the file located at this path to where you specify it</li>
+                        <li> <code>rm this-file</code> means remove this file</li>
                     </ul>
 
                     <p> With a lot of these commands you can add a -r which means recursively for an entire folder instead of just a singular file. Also my own personal warning be careful with mv because you can overwrite your files!!</p>
