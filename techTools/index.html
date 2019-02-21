@@ -14,29 +14,22 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
         <a class="navbar-brand" href="#">Welcome!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         
-            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Links
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Tech Lessons</a>
-                <a class="dropdown-item" href="https://browermb.github.io/collegeforkids-python">College for Kids - Python</a>
-              </div>
-            </li>
-          
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Other Links
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://browermb.github.io/collegeforkids-python/">Tech Tools</a>
+                </div>
+              </li>
         </div>
-      </nav>
+    </nav>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 d-none d-md-block">
@@ -74,12 +67,22 @@
                         </figure>
                     </p>
                     <p> Before we add the key into our authorized key file let's ssh into stu and add some information to our ssh config. Place the following information but with your e-id
-                            <figure>
-                                    <img class = "fit-picture"
-                                    src = "config.png"
-                                    width = "500"
-                                    />
-                            </figure>
+                        <pre>
+                            Host *
+                            ServerAliveInterval 30
+                            ServerAliveCountMax 120
+                            AddKeysToAgent yes
+                            IdentitiesOnly yes
+
+                            Host stu
+                                HostName stu.cs.jmu.edu
+                                IdentityFile ~/.ssh/stu.cs.jmu.edu
+                                User e-id
+                            Host w3
+                                User e-id
+                                IdentityFile ~/.ssh/w3.cs.jmu.edu
+                                ProxyJump stu
+                        </pre>
                     </p>
                     <p>
                         Now let's ssh into stu to edit our authorized keys! 
@@ -197,6 +200,12 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
