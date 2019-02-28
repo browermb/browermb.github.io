@@ -36,3 +36,7 @@ a {
     position: relative;
     border: 0;
 }
+
+.navbarDropdown {
+    text-align: right;
+}
