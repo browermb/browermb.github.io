@@ -9,15 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
         <link rel="stylesheet" href= "style.css">
+    <script src="scripts.js"> </script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: grey;">
-        <a class="navbar-brand" id = "header" href="#">Welcome!</a>
+<body onscroll = "navbarLocater()">
+
+    <div class="custom-header-media"> 
+        <div id="wp-custom-header" class="wp-custom-header">
+            <img src = "reddishKnob.jpg" id = "reddishKnob"> 
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed" style="background-color: #e3f2fd;" id = "homeNavbar">
+        <a class="navbar-brand" href="#">Welcome!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
             <li class="nav-item dropdown show">
@@ -32,11 +41,30 @@
               </li>
         </ul>
     </nav>
-    <div class="jumbotron call-to-action">
-            <h1 class="display-4">Under Consturction!</h1>
-            <p class="lead">This page is under construction. Use the navbar to go to other pages</p>
-            <hr class="my-4">
-         </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 d-none d-md-block" id = "col-md-2">
+                <div class = "card-body">
+                    <h4>Contact</h4>
+                    <h6> Email:<a href="mailto:browermb@dukes.jmu.edu"> browermb@dukes.jmu.edu</a> </h6>
+                    <h6> LinkedIn: <a href="https://www.linkedin.com/in/madelaine-brower-21641b17a/">https://www.linkedin.com/in/madelaine-brower</a></h6>
+                </div>
+            </div>
+            <div class="col-md-10"> 
+                <h3 id = "home" >Home</h3>
+                <p>
+                    My name is Madelaine Brower. I am often called Maddie. This year I am junior at James Madison University.
+                    I am currently studying computer science and mathematics with a minor in robotics. While I continue to 
+                    develop this website please feel free to email me if you have any questions or just want to talk. You may 
+                    also visit my other pages, one if which is still under development.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
