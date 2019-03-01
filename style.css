@@ -12,16 +12,6 @@
     height: 100%;
 }
 
-.navbar {
-    position: absolute;
-    width: 100%;
-    padding: .5rem 1rem;
-    margin-bottom: 3em;
-}
-
-#home {
-    margin-top: 3em;
-}
 
 #reddishKnob {
     width: 100%;
@@ -29,17 +19,21 @@
 }
 
 #col-md-2 {
-    margin-top: 5em;
+    margin-top: 3em;
     word-break: break-word;
 }
 
-a {
+#contact {
     font-size: 10pt;
+}
+
+a {
+    font-size: 12pt;
 }
 
 .entry-header {
     margin-bottom: 50px;
-    margin-top: 6em;
+    margin-top: 4.2em;
     padding-left: 60px;
 }
 .entry-content {
