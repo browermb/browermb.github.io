@@ -38,7 +38,7 @@ a {
 }
 
 .entry-header {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-top: 6em;
     padding-left: 60px;
 }
@@ -49,6 +49,39 @@ a {
     padding-left: 60px;
 }
 
-#entryP {
-    margin-bottom: 15px;
+.p {
+    font-size: 13pt;
+}
+
+#here {
+    font-size: 12pt;
+}
+
+.panel-image {
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    height: 55vh;
+    max-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+}
+
+#date {
+    padding-left: 60px;
+    font-size: 11pt;
+    color: gray;
+}
+
+.post-header {
+    padding-left: 60px;
+    margin-bottom: 30px;
+    margin-top: 3em;
+}
+
+#postLink {
+    padding-left: 60px;
+    font-size: 13pt;
+    color: black;
 }
