@@ -77,5 +77,6 @@ a {
 #postLink {
     padding-left: 60px;
     font-size: 13pt;
+    text-decoration: underline;
     color: black;
 }
