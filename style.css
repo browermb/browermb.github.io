@@ -18,10 +18,10 @@
     height: 300px;
 }
 
-#col-md-2 {
+/* #col-md-2 {
     margin-top: 3em;
     word-break: break-word;
-}
+} */
 
 #contact {
     font-size: 10pt;
@@ -79,4 +79,12 @@ a {
     font-size: 13pt;
     text-decoration: underline;
     color: black;
+}
+
+.contact-btn {
+    margin-top: 5px;
+}
+
+.page-heading {
+    margin-top: 1em;
 }
