@@ -18,15 +18,6 @@
     height: 300px;
 }
 
-/* #col-md-2 {
-    margin-top: 3em;
-    word-break: break-word;
-} */
-
-#contact {
-    font-size: 10pt;
-}
-
 a {
     font-size: 12pt;
 }
@@ -83,6 +74,7 @@ a {
 
 .contact-btn {
     margin-top: 5px;
+    background-color: dimgray;
 }
 
 .page-heading {
