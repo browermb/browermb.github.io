@@ -1,82 +1,83 @@
-
 .jumbotron.call-to-action {
-    margin-top: 60px;
-    padding-bottom: 10px;
-
+  margin-top: 60px;
+  padding-bottom: 10px;
 }
 
 .wp-custom-header {
-    top: 0;
-    object-fit: cover;
-    left: 0;
-    height: 100%;
+  top: 0;
+  object-fit: cover;
+  left: 0;
+  height: 100%;
 }
 
-
 #reddishKnob {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 a {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 .entry-header {
-    margin-bottom: 50px;
-    margin-top: 4.2em;
-    padding-left: 60px;
+  margin-bottom: 50px;
+  margin-top: 4.2em;
+  padding-left: 60px;
 }
 .entry-content {
-    width: 700px;
-    text-align: left;
-    word-wrap: break-word;
-    padding-left: 60px;
+  width: 700px;
+  text-align: left;
+  word-wrap: break-word;
+  padding-left: 60px;
 }
 
 .p {
-    font-size: 13pt;
+  font-size: 13pt;
 }
 
 #here {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 .panel-image {
-    background-attachment: fixed;
-    background-position: center center;
-    position: relative;
-    height: 55vh;
-    max-height: 1200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  height: 55vh;
+  max-height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 #date {
-    padding-left: 60px;
-    font-size: 11pt;
-    color: gray;
-}
-
-.post-header {
-    padding-left: 60px;
-    margin-bottom: 30px;
-    margin-top: 3em;
-}
-
-#postLink {
-    padding-left: 60px;
-    font-size: 13pt;
-    text-decoration: underline;
-    color: black;
+  padding-left: 60px;
+  font-size: 11pt;
+  color: gray;
 }
 
 .contact-btn {
-    margin-top: 5px;
-    background-color: dimgray;
+  margin-top: 5px;
+  background-color: dimgray;
 }
 
 .page-heading {
-    margin-top: 1em;
+  margin-top: 1em;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.postCaption {
+    margin-left: 80px;
 }
