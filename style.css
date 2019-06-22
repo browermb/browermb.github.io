@@ -71,13 +71,28 @@ a {
   padding: 5px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.row {
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .postCaption {
     margin-left: 80px;
+}
+
+.section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#fig1 {
+  margin-left: 100px;
 }
