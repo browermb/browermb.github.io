@@ -1,6 +1,35 @@
 .jumbotron.call-to-action {
-  margin-top: 60px;
-  padding-bottom: 10px;
+    margin-top: 60px;
+    padding-bottom: 10px;
+
+}
+.table-of-contents {
+    position: fixed;
+    right: auto;
+    top: auto;
+    margin-top: 60px;
+}
+
+.panel-image {
+    background-image: url(isat.png);
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    height: 50vh;
+    max-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+}
+
+.card-toc {
+    width: 12rem;
+}
+
+.breadcrumb-item active {
+    display: inline;
+    position: relative;
+    border: 0;
 }
 
 .wp-custom-header {
@@ -8,15 +37,6 @@
   object-fit: cover;
   left: 0;
   height: 100%;
-}
-
-#reddishKnob {
-  width: 100%;
-  height: 300px;
-}
-
-a {
-  font-size: 12pt;
 }
 
 .entry-header {
@@ -35,10 +55,6 @@ a {
   font-size: 13pt;
 }
 
-#here {
-  font-size: 12pt;
-}
-
 .panel-image {
   background-attachment: fixed;
   background-position: center center;
@@ -48,12 +64,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
-
-#date {
-  padding-left: 60px;
-  font-size: 11pt;
-  color: gray;
 }
 
 .contact-btn {
@@ -91,8 +101,4 @@ a {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-#fig1 {
-  margin-left: 100px;
 }
