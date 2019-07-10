@@ -1,0 +1,19 @@
+h1  {
+    color: rgb(71, 167, 100);
+}
+
+h4 {
+    color: rgb(147, 180, 197);
+}
+
+nav {
+    color: rgb(165, 168, 170)
+}
+
+.col-sm-3 {
+    padding-top: 10px;
+}
+
+#start {
+    margin-top: 4em;
+}
