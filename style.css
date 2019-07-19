@@ -16,6 +16,7 @@
 }
 
 a {
+  color: black;
   font-size: 12pt;
 }
 
@@ -88,11 +89,59 @@ a {
 }
 
 .section {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: cover;
 }
 
-#fig1 {
-  margin-left: 100px;
+.square-wrapper {
+  height: 105px;
+  width: 85%;
+  border: 2px solid black;
+}
+
+.section-importantIssues {
+  background-image: url(importantIssues.jpg);
+  background-repeat: no-repeat;
+  alt: "http://www.danielbaxter.com/blog/2017/3/31/take-action";
+}
+
+.section-lifePosts {
+  background-image: url(lifePosts.png);
+  background-repeat: no-repeat;
+  alt: "https://girltalkhq.com/four-easy-tips-finding-balance-professional-personal-life/";
+}
+
+.section-techTools {
+  background-image: url(techTools.jpg);
+  background-repeat: no-repeat;
+}
+
+.section-techLessons {
+  background-image: url(techLessons.jpg);
+  background-repeat: no-repeat;
+  alt: "https://medium.com/@ricardo_c/digital-divide-8e71f8c01c52";
+}
+
+.section-headers {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  color: rgb(92, 87, 87);
+}
+
+.title {
+  font-family: sans-serif;
+}
+
+.blurb {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
