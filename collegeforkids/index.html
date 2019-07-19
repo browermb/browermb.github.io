@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home</title>
+    <title>College for Kids</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -21,16 +21,9 @@
   </head>
 
   <body>
-    <div class="custom-header-media">
-      <div id="wp-custom-header" class="wp-custom-header">
-        <img src="reddishKnob.jpg" id="reddishKnob" />
-      </div>
-    </div>
-
     <nav
-      class="navbar navbar-expand-md navbar-light sticky-top"
+      class="navbar navbar-expand-lg navbar-light fixed-top"
       style="background-color: #e3f2fd;"
-      id="homeNavbar"
     >
       <a class="navbar-brand" href="#">Welcome!</a>
       <button
@@ -46,10 +39,38 @@
       </button>
 
       <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html"
-            >About Me<span class="sr-only">(current)</span></a
+        <li class="nav-item dropdown show">
+          <a
+            class="nav-item nav-link dropdown-toggle mr-md-2"
+            href="#"
+            id="bd-versions"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
           >
+            Courses
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="bd-versions"
+          >
+            <a
+              class="dropdown-item"
+              href="https://browermb.github.io/collegeforkids/pythonSpring2019"
+              >Python Spring 2019</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://browermb.github.io/collegeforkids/pythonSummer2019"
+              >Python Summer 2019</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://browermb.github.io/collegeforkids/scratchSummer2019"
+              >Scratch Summer 2019</a
+            >
+          </div>
         </li>
         <li class="nav-item dropdown show">
           <a
@@ -67,10 +88,11 @@
             class="dropdown-menu dropdown-menu-right"
             aria-labelledby="bd-versions"
           >
+            <a class="dropdown-item" href="https://browermb.github.io/">Home</a>
             <a
               class="dropdown-item"
-              href="https://browermb.github.io/collegeforkids/"
-              >College For Kids</a
+              href="https://browermb.github.io/about.html"
+              >About Me</a
             >
             <a
               class="dropdown-item"
@@ -84,7 +106,7 @@
             >
             <a
               class="dropdown-item"
-              href="https://browermb.github.io/importantIssues/"
+              href="https://browermb.github.io/importantIssues"
               >Important Issues</a
             >
             <a
@@ -99,7 +121,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 d-none d-md-block page-heading">
+        <div class="col-md-2 d-none d-md-block" style="margin-top: 5em;">
           <h4>Contact</h4>
           <a
             class="contact-btn btn btn-info"
@@ -120,95 +142,56 @@
             ><i class="fab fa-github"></i
           ></a>
         </div>
-
-        <div class="col-md-8">
-          <div class="card mb-3" style="max-width: 1000px; margin-top: 1em;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="GoDukes.png"
-                  class="card-img"
-                  alt="..."
-                  style="width: 270px; height: 250px;"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Hi! I am Madelaine Brower.</h5>
-                  <p class="card-text">
-                    This year I am junior at James Madison University. I am
-                    currently studying computer science and mathematics with a
-                    minor in robotics. Please navigate through my web page to
-                    learn more about me or to hear my take on some important
-                    issues we face.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="col-md-8" style="text-align:center;">
+          <div class="jumbotron" style="margin-top: 5em;">
+            <h1 class="display-4">Welcome to College for Kids</h1>
+            <p class="lead">This will serve as our home page for the courses</p>
+            <hr class="my-4" />
+            <p>
+              College for Kids is a program run by JMU's Professional and
+              Continuing Education Office. <br />
+              This program offers a variety of programs for k-8 students taught
+              by JMU undergrad, grad, and <br />
+              community experts.
+            </p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://www.jmu.edu/outreach/programs/all/collegeforkids/"
+              role="button"
+              >Learn more</a
+            >
           </div>
-
-          <div class="row">
-            <div class="col-xs-3 col-md-3 col-lg-3">
-              <a
-                href="https://browermb.github.io/importantIssues/"
-              >
-                <div class="section section-importantIssues"></div>
-              </a>
-              <h4 class="section-headers">
-                <a
-                  href="https://browermb.github.ioimportantIssues/"
-                  style="color:black;"
-                >
-                  Important Issues
-                </a>
-              </h4>
-            </div>
-            <div class="col-xs-3 col-md-3 col-lg-3">
-              <a href="https://browermb.github.io/lifePosts">
-                <div class="section section-lifePosts"></div>
-              </a>
-              <h4 class="section-headers" >
-                <a
-                  href="https://browermb.github.io/lifePosts/"
-                  style="color:black;"
-                >
-                  Life Posts
-                </a>
-              </h4>
-            </div>
-            <div class="col-xs-3 col-md-3 col-lg-3">
-              <a href="https://browermb.github.io/techLessons/">
-                <div class="section section-techLessons"></div>
-              </a>
-              <h4 class="section-headers">
-                <a
-                  href="https://browermb.github.io/techLessons/"
-                  style="color:black;"
-                >
-                  Tech Lessons
-                </a>
-              </h4>
-            </div>
-            <div class="col-xs-3 col-md-3 col-lg-3">
-              <a href="https://browermb.github.io/techTools/">
-                <div class="section section-techTools"></div>
-              </a>
-              <h4 class="section-headers">
-                <a
-                  href="https://browermb.github.io/techTools/"
-                  style="color:black;"
-                >
-                  Tech Tools
-                </a>
-              </h4>
-            </div>
+          <div style="text-align:center;">
+            <h5 class="directedUser">
+              For the Parents:
+            </h5>
+            <p>
+              I am so excited to have the opportunity to teach your children!
+              <br />
+              I hope that this website will be a valuable tool to keep your kids
+              interested in computer science <br />
+              I am always more than willing to be a resource to encourage their
+              learning <br />
+              On the left side of the page is some of my contact information,
+              please dont hesitate to reach out <br />
+            </p>
+            <h5 class="directedUser">
+              For the Students:
+            </h5>
+            <p>
+              If you are currently enrolled in a course please use the
+              navigation bar to get to right website. <br />
+              If you are on this website after a course then feel free to go to
+              any of the websites and <br />
+              try to complete some of the labs/projects. <br />
+              If you have already finished all the materials I have provided or
+              have questions ask your parents <br />
+              to send me an email!
+            </p>
           </div>
         </div>
       </div>
-      <!-- row -->
     </div>
-    <!-- container-fluid -->
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

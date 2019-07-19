@@ -1,0 +1,108 @@
+.jumbotron.call-to-action {
+    margin-top: 60px;
+    padding-bottom: 10px;
+
+}
+.table-of-contents {
+    position: fixed;
+    right: auto;
+    top: auto;
+    margin-top: 60px;
+}
+
+.panel-image {
+    background-image: url(isat.png);
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    height: 50vh;
+    max-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%
+}
+
+.card-toc {
+    width: 12rem;
+}
+
+.breadcrumb-item active {
+    display: inline;
+    position: relative;
+    border: 0;
+}
+
+.wp-custom-header {
+  top: 0;
+  object-fit: cover;
+  left: 0;
+  height: 100%;
+}
+
+.entry-header {
+  margin-bottom: 50px;
+  margin-top: 4.2em;
+  padding-left: 60px;
+}
+.entry-content {
+  width: 700px;
+  text-align: left;
+  word-wrap: break-word;
+  padding-left: 60px;
+}
+
+.p {
+  font-size: 13pt;
+}
+
+.panel-image {
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  height: 55vh;
+  max-height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.contact-btn {
+  margin-top: 5px;
+  background-color: dimgray;
+}
+
+.page-heading {
+  margin-top: 1em;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.postCaption {
+    margin-left: 80px;
+}
+
+.section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.directedUser {
+  font-weight: bold;
+}
