@@ -104,6 +104,12 @@ a {
   border: 2px solid black;
 }
 
+.square-wrapper--small {
+  height: 77px;
+  width: 85%;
+  border: 2px solid black;
+}
+
 .section-importantIssues {
   background-image: url(importantIssues.jpg);
   background-repeat: no-repeat;
