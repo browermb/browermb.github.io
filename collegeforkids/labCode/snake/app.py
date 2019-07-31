@@ -73,19 +73,22 @@ class App:
             pygame.event.pump()
             keys = pygame.key.get_pressed() 
  
+            #Example of an if statement for the right key
             if (keys[K_RIGHT]):
                 self.player.moveRight()
- 
-            if (keys[K_LEFT]):
+
+            """Complete the code for the other keys"""
+
+            #If statement for left key
                 self.player.moveLeft()
  
-            if (keys[K_UP]):
+            #If statement for the up key
                 self.player.moveUp()
  
-            if (keys[K_DOWN]):
+            #If statement for the down key
                 self.player.moveDown()
  
-            if (keys[K_ESCAPE]):
+            #If statement for the esc key
                 self._running = False
  
             self.on_loop()
