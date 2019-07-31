@@ -1,11 +1,11 @@
 import random
 
 def validateInput():
-    inputGuess = raw_input("Enter your guess as 4 letters e.g. XXXX:")
+    inputGuess = input("Enter your guess as 4 letters e.g. XXXX:")
 
     while True:
         if len(inputGuess) != 4:
-           inputGuess = raw_input("Enter your guess as 4 letters e.g. XXXX:")
+           inputGuess = input("Enter your guess as 4 letters e.g. XXXX:")
         else:
             wordList = list( inputGuess.upper() )
 
@@ -16,8 +16,8 @@ def validateInput():
 
 
             #Check if invalidLetters is True
-                print "Possible colours are R G Y B W"
-                inputGuess = raw_input("Enter your guess as 4 letters e.g. XXXX:") 
+                print("Possible colours are R G Y B W")
+                inputGuess = input("Enter your guess as 4 letters e.g. XXXX:") 
 
             else:
                 return wordList
@@ -28,11 +28,11 @@ guess = []
 correctPosition = 0
 correctColour = 0
 
-#Loop 4 times
+#Loop 4 times (use i)
     code.append(random.choice(['R','G','Y','B','W']))
 
-print "Guess my sequence of four colours, in the correct order."
-print "\nPossible colours are R G Y B W"
+print("Guess my sequence of four colours, in the correct order.")
+print("\nPossible colours are R G Y B W")
 
 while guessesRemaining > 0:
 
@@ -66,16 +66,16 @@ while guessesRemaining > 0:
             lettersChecked.append(tempGuess[j])
 
     #if correct position is greater than 0
-        print "You had",correctPosition,"correct colours in the correct place"
+        print("You had",correctPosition,"correct colours in the correct place")
     
     #if correct color is greater than 0
-        print "You had",correctColour,"correct colours in the wrong place"
+        print ("You had",correctColour,"correct colours in the wrong place")
 
     #if correct position and correct color are equal to 0
-        print "No correct colours"
+        print("No correct colours")
 
     #if correct position is equal to 4
-        print "You won in",12-guessesRemaining,"guesses, congratulations!"
+        print("You won in",12-guessesRemaining,"guesses, congratulations!")
         guessesRemaining = 0
 
-print "Thanks for playing"
+print("Thanks for playing")
