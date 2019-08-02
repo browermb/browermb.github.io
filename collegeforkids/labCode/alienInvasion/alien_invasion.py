@@ -64,7 +64,7 @@ class AlienInvasion:
                 self._check_keydown_events(event)
             """make this code run event.type is pygame.KEYUP """
                 self._check_keyup_events(event)
-            """make this code run event.type is pygame.MOUSEBOTTONDOWN """
+            """make this code run event.type is pygame.MOUSEBOTTOMDOWN """
                 mouse_pos = pygame.mouse.get_pos()
                 self._check_play_button(mouse_pos)
 
@@ -96,20 +96,20 @@ class AlienInvasion:
     def _check_keydown_events(self, event):
         """Respond to keypresses."""
         
-        """make this code run event.key is pygame.K_RIGHT"""
+        """make this code run when event.key is pygame.K_RIGHT"""
             self.ship.moving_right = True
-        """make this code run event.key is pygame.K_LEFT"""
+        """make this code run when event.key is pygame.K_LEFT"""
             self.ship.moving_left = True
-        """make this code run event.key is pygame.K_q"""
+        """make this code run when event.key is pygame.K_q"""
             sys.exit()
-        """make this code run event.key is pygame.K_SPACE"""
+        """make this code run when event.key is pygame.K_SPACE"""
             self._fire_bullet()
 
     def _check_keyup_events(self, event):
         """Respond to key releases."""
         
-        """write code so that when event.key is pygame.K_RIGHT self.ship.moving is False"""
-        """ else if event.key is pygame.K_LEFT self.ship.moving is True """
+        """write code so that when event.key is pygame.K_RIGHT self.ship.moving is set to False"""
+        """ else if event.key is pygame.K_LEFT self.ship.moving is set to True """
     def _fire_bullet(self):
         """Create a new bullet and add it to the bullets group."""
         
@@ -124,7 +124,7 @@ class AlienInvasion:
 
         # Get rid of bullets that have disappeared.
         for bullet in self.bullets.copy():
-            # Make this code run if bullet.rect.bottom is les than or equal to 0
+            # Make this code run if bullet.rect.bottom is less than or equal to 0
             
                  self.bullets.remove(bullet)
 
