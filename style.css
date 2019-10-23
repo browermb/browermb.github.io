@@ -88,7 +88,7 @@ a {
     margin-left: 80px;
 }
 
-.section {
+.category {
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -110,30 +110,29 @@ a {
   border: 2px solid black;
 }
 
-.section-importantIssues {
+.category-importantIssues {
   background-image: url(importantIssues.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   alt: "http://www.danielbaxter.com/blog/2017/3/31/take-action";
 }
 
-.section-lifePosts {
-  background-image: url(lifePosts.png);
-  background-repeat: no-repeat;
-  alt: "https://girltalkhq.com/four-easy-tips-finding-balance-professional-personal-life/";
-}
-
-.section-techTools {
+.category-techTools {
   background-image: url(techTools.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.section-techLessons {
+.category-techLessons {
   background-image: url(techLessons.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   alt: "https://medium.com/@ricardo_c/digital-divide-8e71f8c01c52";
 }
 
-.section-headers {
+.category-headers {
   display: flex;
   flex-direction: column;
 }
