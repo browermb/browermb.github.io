@@ -30,28 +30,25 @@ class Player:
                 self.y[i] = self.y[i - 1]
 
             #update position of head of snake
-            if self.direction == 0:
+            # write an if statement to check if direction is 0
                 self.x[0] = self.x[0] + self.step
-            if self.direction == 1:
+            # write an if statement to check if direction is 1
                 self.x[0] = self.x[0] - self.step
-            if self.direction == 2:
+            # write an if statement to check if direction is 2
                 self.y[0] = self.y[0] - self.step
-            if self.direction == 3:
+            # write an if statement to check if direction is 3
                 self.y[0] = self.y[0] + self.step
 
-            self.updateCount = 0
+            #set the value of self.updateCount to 0
 
+    """
+    define and finish three functions called: moveLeft, moveUp, moveDown
+    moveLeft should set direction to 1
+    moveUp should set direction to 2
+    moveDOwn should set direction to 3
+    """
     def moveRight(self):
         self.direction = 0
-
-    def moveLeft(self):
-        self.direction = 1 
-    
-    def moveUp(self):
-        self.direction = 2
-
-    def moveDown(self):
-        self.direction = 3
 
     def draw(self, surface, image):
         for i in range(0, self.length):
