@@ -1,0 +1,153 @@
+.jumbotron.call-to-action {
+    margin-top: 60px;
+    padding-bottom: 10px;
+  }
+  
+  .wp-custom-header {
+    top: 0;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+  }
+  
+  #reddishKnob {
+    width: 100%;
+    height: 300px;
+  }
+  
+  a {
+    font-size: 12pt;
+  }
+  
+  .entry-header {
+    margin-bottom: 50px;
+    margin-top: 4.2em;
+    padding-left: 60px;
+  }
+  .entry-content {
+    width: 700px;
+    text-align: left;
+    word-wrap: break-word;
+    padding-left: 60px;
+  }
+  
+  .p {
+    font-size: 13pt;
+  }
+  
+  #here {
+    font-size: 12pt;
+  }
+  
+  .panel-image {
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    height: 55vh;
+    max-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  #date {
+    padding-left: 60px;
+    font-size: 11pt;
+    color: gray;
+  }
+  
+  .contact-btn {
+    margin-top: 5px;
+    background-color: dimgray;
+  }
+  
+  .page-heading {
+    margin-top: 1em;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  .row {
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  }
+  
+  .postCaption {
+      margin-left: 80px;
+  }
+  
+  .category {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: cover;
+  }
+  
+  .square-wrapper {
+    height: 105px;
+    width: 85%;
+    border: 2px solid black;
+  }
+  
+  .square-wrapper--small {
+    height: 77px;
+    width: 85%;
+    border: 2px solid black;
+  }
+  
+  .category-importantIssues {
+    background-image: url(importantIssues.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    alt: "http://www.danielbaxter.com/blog/2017/3/31/take-action";
+  }
+  
+  .category-techTools {
+    background-image: url(techTools.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .category-techLessons {
+    background-image: url(techLessons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    alt: "https://medium.com/@ricardo_c/digital-divide-8e71f8c01c52";
+  }
+  
+  .category-headers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .date {
+    color: rgb(92, 87, 87);
+  }
+  
+  .title {
+    font-family: sans-serif;
+  }
+  
+  .blurb {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  

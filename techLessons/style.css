@@ -5,5 +5,9 @@ a {
 .jumbotron.call-to-action {
     margin-top: 60px;
     padding-bottom: 10px;
+    font-size: 17px;
+}
 
+.table-of-contents {
+    margin-top: 45px;
 }
